@@ -24,7 +24,7 @@ app.use('/',(req,res)=>{
 
 const jsonData = "JSON.parse(  fs.readFileSync('','utf-8'))"
    
-
+mongoose.set("strictQuery", false);
 const uploadData=async()=>{
       chartSchema.create(jsonData,(err,data)=>{
         if(err){
