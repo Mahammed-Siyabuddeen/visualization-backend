@@ -11,7 +11,7 @@ app.use(cors())
 env.config()
 
 const Port=process.env.Port||9000
-app.listen(Port,()=>console.log('app runnig'))
+app.listen(Port,()=>console.log(`app runnig ${Port}`))
 app.use('/',(req,res)=>{
 
         chartSchema.find().then((data)=>{
