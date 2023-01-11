@@ -37,6 +37,6 @@ const uploadData=async()=>{
 }
 
 // uploadData()
-mongoose.connect(process.env.CONNECTION_URL,{
+mongoose.connect(process.env.CONNECTIONURL,{
     useNewUrlParser:true
 })
