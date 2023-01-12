@@ -1,8 +1,6 @@
 import  express from "express";
 import mongoose from "mongoose";
 import chartSchema from "./chartSchema.js";
-// import data from '../visualization/src/Data.json' assert {type:"json"}
-import fs from 'fs'
 import cors from 'cors'
 import env from 'dotenv'
 
