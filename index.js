@@ -21,7 +21,7 @@ app.use('/',(req,res)=>{
 
 
    
-// mongoose.set("strictQuery", false);
+mongoose.set("strictQuery", false);
 // const uploadData=async()=>{
 //       chartSchema.create("",(err,data)=>{
 //         if(err){
