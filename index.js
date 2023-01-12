@@ -20,19 +20,18 @@ app.use('/',(req,res)=>{
 })
 
 
-const jsonData = "JSON.parse(  fs.readFileSync('','utf-8'))"
    
-mongoose.set("strictQuery", false);
-const uploadData=async()=>{
-      chartSchema.create(jsonData,(err,data)=>{
-        if(err){
-            console.log(err);
-        }else{
-              console.log("data successfully uploaded");
-            }
+// mongoose.set("strictQuery", false);
+// const uploadData=async()=>{
+//       chartSchema.create("",(err,data)=>{
+//         if(err){
+//             console.log(err);
+//         }else{
+//               console.log("data successfully uploaded");
+//             }
     
-        })
-}
+//         })
+// }
 
 // uploadData()
 mongoose.connect(process.env.CONNECTIONURL,{
