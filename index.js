@@ -8,6 +8,9 @@ const app=express()
 app.use(cors())
 env.config()
 
+app.use(bodyParser.json({limit:'50mb',extended:true}))
+app.use(bodyParser.urlencoded({limit:'50mb',extended:true}))
+
 const Port=process.env.Port||9000
 app.listen(Port,()=>console.log(`app runnig ${Port}`))
 app.use('/',(req,res)=>{
